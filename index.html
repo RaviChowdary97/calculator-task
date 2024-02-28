@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .buttons {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="calculator">
+            <input type="text" id="display" class="form-control" readonly />
+            <br />
+            <div class="buttons">
+              <button class="btn btn-primary" onclick="addToDisplay('7')">
+                7
+              </button>
+
+              <button class="btn btn-primary" onclick="addToDisplay('8')">
+                8
+              </button>
+
+              <button class="btn btn-primary" onclick="addToDisplay('9')">
+                9
+              </button>
+
+              <button class="btn btn-primary" onclick="addToDisplay('/')">
+                /
+              </button>
+
+              <button class="btn btn-primary" onclick="addToDisplay('4')">
+                4
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('5')">
+                5
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('6')">
+                6
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('*')">
+                *
+              </button>
+
+              <button class="btn btn-primary" onclick="addToDisplay('1')">
+                1
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('2')">
+                2
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('3')">
+                3
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('-')">
+                -
+              </button>
+
+              <button class="btn btn-primary" onclick="addToDisplay('0')">
+                0
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('.')">
+                .
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('%')">
+                %
+              </button>
+              <button class="btn btn-primary" onclick="addToDisplay('+')">
+                +
+              </button>
+
+              <button class="btn btn-success" onclick="clearDisplay()">
+                C
+              </button>
+              <button class="btn btn-danger" onclick="backspace()">
+                Backspace
+              </button>
+              <button class="btn btn-primary" onclick="calculate()">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="cal.js"></script>
+  </body>
+</html>
